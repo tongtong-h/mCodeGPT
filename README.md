@@ -1,6 +1,6 @@
-# mCodeGPT: Automating Cancer Clinical Data Standardization with Large Language Models
+# mCodeGPT: Bridging the Gap between UnstructuredMedical Text and Structured Cancer Ontologies
 
-[![License](https://img.shields.io/badge/License-BSD-blue.svg)](LICENSE)
+Zhang, K., <ins>Huang, T.</ins>, Malin, B. A., Osterman, T., Long, Q., & Jiang, X. (2024). **mCodeGPT: Bridging the Gap between Unstructured Medical Text and Structured Cancer Ontologies**. [Paper link](https://web.archive.org/web/20240217074744id_/https://assets.researchsquare.com/files/rs-3940535/v1/b28cb09b-1194-4baa-afe8-5b5f52860618.pdf?c=1707482118)
 
 ## Overview
 
@@ -29,10 +29,6 @@ BFOP is a level-wise parsing strategy similar to the breadth-first search algori
 
 Recognizing the challenges of extracting detailed information from large and complex ontologies, 2POP is a two-phase parsing approach. In the initial phase, it generates binary queries to ascertain the presence or absence of each named entity within the patient notes. In the second phase, it narrows down the queries to seek details only for those entities confirmed as present, enhancing precision in information extraction.
 
-## Installation
-
-To get started with mCodeGPT, you can install it using pip:
-
 ## **Usage**:
 ```
 e.g. use GPT-3.5 with method RLS:
@@ -41,29 +37,3 @@ e.g. use GPT-3.5 with method RLS:
 e.g. use GPT-4 with method 2POP:
 >> python main.py -i './examples/input_txt.txt' -k  '<YOUR OPENAI AZURE API KEY>' -b '<YOUR OPENAI AZURE API BASE>' -v '2023-05-15' -d 'mcodegpt_gpt_4' -m '2POP' -o filename
 ```
-
-## License
-
-This project is licensed under the BSD License (2-Clause and 3-Clause): - see the [![License](https://img.shields.io/badge/License-BSD-blue.svg)](LICENSE) file for details.
-
-## Acknowledgments
-
-mCodeGPT project is partially supported by NCI U01CA274576, CPRIT RR180012, and UTHealth
-
-## Support
-
-If you have any questions or encounter issues, please feel free to [create an issue](https://github.com/anotherkaizhang/mCodeGPT/issues).
-
-## Contributing
-
-Contributions are welcome! Please see our [Contribution Guidelines](CONTRIBUTING.md) for more information.
-
-## Authors
-
-- [Kai Zhang](https://github.com/anotherkaizhang)
-- [Xiaoqian Jiang](https://github.com/x1jiang)
-
-## Citation
-
-If you use mCodeGPT in your research, please cite our paper (if available).
-
