@@ -1,6 +1,14 @@
-# mCodeGPT: Bridging the Gap between UnstructuredMedical Text and Structured Cancer Ontologies
+# mCodeGPT Experiments Repository
 
-Zhang, K., <ins>Huang, T.</ins>, Malin, B. A., Osterman, T., Long, Q., & Jiang, X. (2024). **mCodeGPT: Bridging the Gap between Unstructured Medical Text and Structured Cancer Ontologies**. [Paper link](https://web.archive.org/web/20240217074744id_/https://assets.researchsquare.com/files/rs-3940535/v1/b28cb09b-1194-4baa-afe8-5b5f52860618.pdf?c=1707482118)
+Welcome to the **mCodeGPT Experiments** repository! 🧪 This project serves as a centralized hub for all experiments for the research efforts related to **mCodeGPT**. The original mCodeGPT implementation can be found in the original repository https://github.com/anotherkaizhang/mCodeGPT/tree/main.
+
+## Purpose & Scope
+
+This repository is dedicated to:
+
+- Rapid experimentation with **mCodeGPT** architectures, models, and dataset workflows.
+- Testing novel training strategies and sample inputs/outputs
+- Sharing insights gleaned from hands-on results and fostering community collaboration.
 
 ## Overview
 
@@ -28,12 +36,3 @@ BFOP is a level-wise parsing strategy similar to the breadth-first search algori
 ### Two-Phase Ontology Parser (2POP)
 
 Recognizing the challenges of extracting detailed information from large and complex ontologies, 2POP is a two-phase parsing approach. In the initial phase, it generates binary queries to ascertain the presence or absence of each named entity within the patient notes. In the second phase, it narrows down the queries to seek details only for those entities confirmed as present, enhancing precision in information extraction.
-
-## **Usage**:
-```
-e.g. use GPT-3.5 with method RLS:
->> python main.py -i './examples/input_txt.txt' -k  '<YOUR OPENAI AZURE API KEY>' -b '<YOUR OPENAI AZURE API BASE>' -v '2023-05-15' -d 'mcodegpt_gpt_35' -m 'RLS' -o filename
-
-e.g. use GPT-4 with method 2POP:
->> python main.py -i './examples/input_txt.txt' -k  '<YOUR OPENAI AZURE API KEY>' -b '<YOUR OPENAI AZURE API BASE>' -v '2023-05-15' -d 'mcodegpt_gpt_4' -m '2POP' -o filename
-```
